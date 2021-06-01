@@ -1,0 +1,72 @@
+[
+    {
+      "testcase_name": "Field username kosong",
+      "data": {
+        "name":"Akhbarona Syanulin",
+        "username": "",
+        "password": "12345678",
+        "repassword": "12345678"
+      },
+      "expected": "field username tidak boleh kosong"
+    },
+    {
+      "testcase_name": "Field password kosong",
+      "data": {
+        "name":"Akhbarona Syanulin",
+        "username": "akhbar",
+        "password": "",
+        "repassword": "12345678"
+      },
+      "expected": "field password tidak boleh kosong dan re-password tidak sama"
+    },
+    {
+      "testcase_name": "Username sudah digunakan",
+      "data": {
+        "name":"Akhbarona Syanulin",
+        "username": "akhbarona",
+        "password": "12345678",
+        "repassword": "12345678"
+      },
+      "expected": "Username sudah dipakai"
+    },
+    {
+      "testcase_name": "Password kurang dari 8 karakter",
+      "data": {
+        "name":"Akhbarona Syanulin",
+        "username": "akhbar",
+        "password": "123456",
+        "repassword": "12345678"
+      },
+      "expected": "Password harus 8 karakter atau lebih dan re-password tidak sama"
+    },
+    {
+      "testcase_name": "Field konfirmasi password kosong",
+      "data": {
+        "name":"Akhbarona Syanulin",
+        "username": "akhbar",
+        "password": "12345678",
+        "repassword": ""
+      },
+      "expected": "field re-password tidak boleh kosong"
+    },
+    {
+      "testcase_name": "Re-password konfirmasi tidak sama",
+      "data": {
+        "name":"Akhbarona Syanulin",
+        "username": "akhbar",
+        "password": "12345678",
+        "repassword": "berkahstartup"
+      },
+      "expected": "Re-password tidak sama"
+    },
+    {
+      "testcase_name": "Seluruh field terisi dengan benar",
+      "data": {
+        "name":"Akhbarona Syanulin",
+        "username": "akhbar",
+        "password": "12345678",
+        "repassword": "12345678"
+      },
+      "expected": "Berhasil Registrasi"
+    }
+  ]
