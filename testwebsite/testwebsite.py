@@ -11,7 +11,7 @@ obj = json.loads(json_data)
 
 PATH = "C:\chromedriver\chromedriver.exe"
 web = webdriver.Chrome(PATH)
-web.get("http://localhost:3000/")
+web.get("https://praktikum-pwl-selenium.herokuapp.com/")
 
 nama_input = web.find_element_by_id('name')
 username_input = web.find_element_by_id('username')
